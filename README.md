@@ -16,8 +16,8 @@
 | 주차 | 범위 | 내용| 
 |:----:|:-----:|:---:|
 |1|1 - 9|[1주차](https://github.com/frontend-developer-study/modern_Js_Deepdive_study/tree/main/1week)|
-|2|10 - 12|-|
-|3|14 - 18|-|
+|2|10 - 12|[2주차](https://github.com/frontend-developer-study/modern_Js_Deepdive_study/tree/main/2week)|
+|3|13 - 18|-|
 |4|19 - 21|-|
 |5|22 - 26|-|
 |6|33 - 37|-|
