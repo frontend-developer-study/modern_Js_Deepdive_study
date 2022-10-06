@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .btn {
+      width: 100px;
+      height: 50px;
+    }
+    .black-bg {
+      width: 300px;
+      height: 300px;
+      background: black;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="black-bg">
+    <button class="btn">버튼1</button>
+  </div>
+  
+</body>
+<script>
+  document.querySelector('.black-bg').addEventListener('click', function (e) {
+    console.log(e.target);
+    console.log(e.currentTarget);
+    console.log(this);
+  })
+  /*
+  addEventListener안에서 e.currentTarget와 this는 같은가?
+  1. 이벤트 발생 요소 감지
+   가. e.target : 실제 이벤트가 발생하는 요소
+   나. e.currentTarget : 이벤트 리스너가 달린 요소
+  2. e.target, e.currentTarget, this 출력 비교
+   가. black-bg를 클릭했을 때 : 3개 값이 모두 같음.
+    → e.target과 this가 같을수도 있으므로 e.currentTarget이 꼭 this와 같다고 볼 수 없음.
+   나. black-bg의 하위요소인 btn을 클릭했을 때
+    1) e.target은 실제 클릭한 요소(btn)를 가리키고 있음.
+    2) e.currentTarget과 this는 여전히 black-bg를 가리키고 있음.
+
+    따라서 addEventListener안에서 e.currentTarget와 this는 같은 값을 나타낸다.(아마도?)
+  */
+
+</script>
+</html>
